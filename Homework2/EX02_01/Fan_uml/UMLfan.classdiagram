@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e51a29c7-f045-42c7-8fea-c06af7b52366" name="UMLfan" linkedPackageId="f0c77bb9-116a-4255-b83e-dc99d8e65d44" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7e575351-f4df-49f3-9f19-e7effac2928d">
+      <profileInstance Id="cd57d325-aa48-4d17-b7f9-737beb285028" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9b823f72-11dd-4fc5-8dde-e5e1d35aeb43">
+      <profileInstance Id="2c6f5e5f-854b-480b-9297-0f8a895cbf2b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d6ed2bc4-c994-4678-aff5-95af1f8d79a5" name="Fan" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4fe0fba-9653-41b2-9345-a258e9cd1965" />
+        <ownedAttributesInternal>
+          <property Id="bd937946-c985-42eb-b201-03b76f61b6f0" name="speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52e0282b-1e9d-41a4-b7f0-bb044f768b8e" />
+          </property>
+          <property Id="95a645dc-fe85-4148-84a2-5113cde80c27" name="radius" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ed23d8a-1d62-4b02-8d1f-bd6cf4248cb4" />
+          </property>
+          <property Id="9f00dfdd-e87f-4b1e-8488-cd764ef1f5c0" name="on/off" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d5beb66-e8b6-479b-a78e-3456eb1b5ca9" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="10366e42-6203-4dad-b367-c4ffb4ec27c0" name="set speed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="162922a1-23e2-4c3d-8de5-74eb94af6c01" />
+          </operation>
+          <operation Id="7cb6cb4a-192f-4c37-82e4-77b4d6256b98" name="set radius" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7194a93d-50c6-45db-a771-397b21669e60" />
+          </operation>
+          <operation Id="599aa43f-63e4-418f-9a39-2af3e2ccfaec" name="turn on/off" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9fef255d-887c-41ed-9a02-9a55c778587a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f0c77bb9-116a-4255-b83e-dc99d8e65d44" name="Fan_uml">
+    <elementDefinition Id="780586b1-827e-4f38-bbdb-7c335df0448d" />
+  </package>
+</logicalClassDesignerModel>

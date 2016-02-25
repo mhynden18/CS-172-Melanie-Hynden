@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="67997c93-0511-4be5-bbe3-b54077f4e984" name="UMLquadraticEquation" linkedPackageId="6173acf6-5ed7-4bdf-aa0a-6d72042c5021" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="45d2f3aa-f438-40f3-a8c9-f71b2c377e47" name="QuadraticEquation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="447e838e-1363-4c81-90de-1ffc94d98b7f" />
+        <ownedAttributesInternal>
+          <property Id="299af4b6-90e6-445e-a77b-60e46c5b2e5f" name="double a" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe1b8b39-a86e-477f-aa9b-a54fb46c85fe" />
+          </property>
+          <property Id="cd4d1559-5c51-4060-8c12-791211b0bec1" name="double b" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f26fc90b-5a47-43bf-abd8-2f70c8767bb5" />
+          </property>
+          <property Id="1cb13f76-09e2-47be-b49e-2d24297b094c" name="double c" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5e96a55-b73d-432c-8b9b-b3bb6499f349" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e2fb1847-b360-4d5b-8759-2e19d5f9f88b" name="getA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ae11ae2c-f05b-401a-a5b1-f6f5e67476f9" />
+          </operation>
+          <operation Id="2338ea61-3cbc-4236-9809-b0528494ece1" name="getB" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4d8f1736-b487-48fc-b5db-a610260ebf2d" />
+          </operation>
+          <operation Id="a9f5cddb-cc62-4ef6-8c43-b7b9491c4969" name="getC" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b2ab5591-7d35-473a-a9f7-8ca2f1dfe541" />
+          </operation>
+          <operation Id="057c2206-52ff-4053-95f0-205cada617de" name="getDiscriminant" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b90411c1-bf91-4d65-8f6a-be83cdd4e003" />
+          </operation>
+          <operation Id="46f6cf2f-1dd3-4058-8f50-a43a6e1c248c" name="getRoot1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a3a6088-faab-4ea4-ad0f-4367c8b676ef" />
+          </operation>
+          <operation Id="12ed2217-2b01-4934-972a-e1ae45642866" name="getRoot2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b4228905-f949-41be-a173-db7e60a9a817" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6173acf6-5ed7-4bdf-aa0a-6d72042c5021" name="QuadraticEquationHomework2">
+    <elementDefinition Id="3f375742-49e1-4757-be2b-624227cc640c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d97f71af-2aa2-437f-9897-2d0a938d92d3">
+        <profileInstance Id="55150c8f-4fad-482e-a079-c768cb5ef309" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cacbbf3d-1810-40e7-b2bd-53574699608f">
+        <profileInstance Id="03af8fcd-1470-4013-91fd-24f89a6df98c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

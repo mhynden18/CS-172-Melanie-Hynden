@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: EX02_03real, Configuration: Debug Win32 ------
+1>  Source.cpp
+1>  EX02_03real.vcxproj -> Z:\CS 172\Homework2\EX02_03real\Debug\EX02_03real.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
