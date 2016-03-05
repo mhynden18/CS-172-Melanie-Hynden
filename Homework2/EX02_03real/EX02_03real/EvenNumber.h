@@ -10,7 +10,7 @@ public:
 	int previous;
 
 	//no arg constructor
-	EvenNumber() //same name as the class
+	EvenNumber() //same name as the class					
 	{
 		value = 0; // default setting is to make this number 0
 	}

@@ -10,7 +10,8 @@ public:
 	//data fields a, b, and c
 	double a;
 	double b;
-	double c;
+	double c;													//Derek- this is fine, but things like a, b, c you might want private in other programs
+
 	double discriminant;
 	double r1;
 	double r2;
@@ -33,7 +34,8 @@ public:
 	}
 
 	//get functions
-	double getA()
+	double getA()														//Derek- perfect getters nice job
+
 	{
 		return a; //returns little a because that is what big A is set to
 	}
