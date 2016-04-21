@@ -1,0 +1,14 @@
+﻿Build started 4/20/2016 5:12:50 PM.
+     1>Project "Z:\CS 172\EX06_03_actual\EX06_03_actual\EX06_03_actual.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>z:\cs 172\ex06_03_actual\ex06_03_actual\source.cpp(40): error C2373: 'theVector<T>::empty': redefinition; different type modifiers
+         z:\cs 172\ex06_03_actual\ex06_03_actual\source.cpp(18): note: see declaration of 'theVector<T>::empty'
+     1>z:\cs 172\ex06_03_actual\ex06_03_actual\source.cpp(68): error C2373: 'theVector<T>::size': redefinition; different type modifiers
+         z:\cs 172\ex06_03_actual\ex06_03_actual\source.cpp(17): note: see declaration of 'theVector<T>::size'
+     1>Done Building Project "Z:\CS 172\EX06_03_actual\EX06_03_actual\EX06_03_actual.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.71
