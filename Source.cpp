@@ -1,55 +1,227 @@
-/////////////////////////////////
-//Melanie Hynden
-//Homework 2, Example 1
 
+
+///////////////////////////////////////
+
+//Melanie Hynden
+
+//implemeting vector class
+
+//homework 6, number 3
+
+/////////////////////////////////////////////
 
 #include <iostream>
-#include "Fan.h"
+
 using namespace std;
-int main()
+
+//create the vector class template
+
+template<typename T> //set up the template
+
+class theVector
+
 {
-	Fan fan1;
-	Fan fan2;
 
-	//the following three things are the characteristics of fan 1
-	int speed1 = 3;
-	fan1.setSpeed(speed1); //relates to the void function for speed
+public:
 
-	double radius1 = 10;
-	fan1.setRadius(radius1);
+	theVector();
 
-	bool on1 = true;
-	fan1.setOn(on1);
+	void push_back(T element); //appends the element in the vector
 
-	//the following relates to fan 2
-	int speed2 = 2;
-	fan2.setSpeed(speed2);
+	void pop_back(); //removes the last element from the vector
 
-	double radius2 = 5;
-	fan2.setRadius(radius2);
+	unsigned const int size(); //returns number of elements in this vector
 
-	bool on2 = false;
-	fan2.setOn(on2);
+	bool empty(); //returns true if vector is empty
 
+	T at(int index); //returns the element at the specified index in the vector
 
-	//so that the bool data shows up as true/false instead of 1/0
-	std::cout << std::boolalpha;
+	void clear(); //removes all elements from the vector
 
-	//cout the information
-	cout << "The speed of Fan 1 is " << fan1.speed << endl;
-	cout << "The radius of Fan 1 is " << fan1.radius << endl;
-	cout << "Fan 1 is on? " << fan1.on << endl;
+	void swap(theVector v2); //swaps contents of this vector with specified vector
 
-	cout << "The speed of Fan 2 is " << fan2.speed << endl;
-	cout << "The radius of Fan 2 is " << fan2.radius << endl;
-	cout << "Fan 2 is on? " << fan2.on << endl;
+private:
+
+	T elements[50];
+
+	int vectSize;
+
+};
 
 
-	//to check my code
-	cout << "press any key to continue" << endl;
-	int answer;
-	cin >> answer;
 
+//vector function of type "theVector" 
 
-	return 0;
+template<typename T>
+
+theVector<T>::theVector()
+
+{
+
+	vectSize = 0;
+
 }
+
+//creates the function to check for empty 
+
+template<typename T>
+
+bool theVector<T>::empty()
+
+{
+
+	return (vectSize == 0); //it is empty, bool false
+
+}
+
+//at function, returning element at specific spot 
+
+template<typename T>
+
+T theVector<T>::at(int index)
+
+{
+
+	return elements[index];
+
+}
+
+//push back function
+
+template<typename T>
+
+void theVector<T>::push_back(T value)
+
+{
+
+	elements[vectSize] = value; 
+	vectSize++;
+	//moves it over one, with the increment used
+
+}
+
+//pop back funciton
+
+template<typename T>
+
+void theVector<T>::pop_back()
+
+{
+
+	return elements[vectSize]; 
+	vectSize--; //similar to push back, but decrement instead of increment
+
+}
+
+//size function
+
+template<typename T>
+
+unsigned const int theVector<T>::size()
+
+{
+
+	return vectSize;
+
+}
+
+//clear function
+
+template<typename T>
+
+void theVector<T>::clear()
+
+{
+
+	vectSize = 0; //clears it by setting equal to zero 
+
+}
+
+//swap function
+
+template<typename T>
+
+void theVector<T>::swap(theVector v2)
+
+{
+
+	T temp[50]; //set it to 50
+
+	int tempSize = v2.size(); //set size equal to v2
+
+	for (int i = 0; i < v2.size(); i++)
+
+	{
+
+		temp[i] = v2.at(i); //go through and set each equal to each other 
+
+	}
+
+	v2.clear(); //then clear it 
+
+	for (int i = 0; i < size(); i++)
+
+	{
+
+		v2.push_back(at(i)); //go through and push back
+
+	}
+
+	clear(); //clear it
+
+	for (int i = 0; i < tempSize; i++)
+
+	{
+
+		push_back(temp[i]); //now push back temp[i] vs. at(i)
+
+	}
+
+}
+
+
+
+int main()
+
+{
+
+	theVector<int> v1; //making vector 1
+
+	v1.push_back(1); //call the push back
+
+	v1.push_back(2);
+
+	v1.push_back(3);
+
+	v1.push_back(4);
+
+	v1.push_back(5);
+
+
+
+	theVector<int> v2; //making vector 2
+
+	v2.push_back(6);
+
+	v2.push_back(7);
+
+	v2.push_back(8);
+
+	v2.push_back(9);
+
+	v2.push_back(10);
+
+	v1.swap(v2); //calling the swap function
+
+	for (int i = 0; i < v1.size(); i++)
+
+	{
+
+		cout << v1.at(i) << " "; //cout the answer so can check/be seen 
+
+	}
+
+}
+
+
+
