@@ -8,6 +8,12 @@
 #include <ctime> //for random
 using namespace std;
 
+/*Derek-
+I like how you managed to get around your problem of just getting random numbers put into the array, way to think outside the box.
+20/20
+
+*/
+
 template<typename T>
 void shuffle(vector<T>& v); //declare it up here
 
