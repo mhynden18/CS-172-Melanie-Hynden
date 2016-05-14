@@ -4,6 +4,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*Derek-
+This looks great Melanie, well done looks good 
+20/20*/
 template< typename T>
 int linearSearch(T list[], T key, int arraySize)
 {

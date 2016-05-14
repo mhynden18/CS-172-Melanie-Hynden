@@ -2,6 +2,11 @@
 //Melanie
 //Homework 6, number 2, Is Sorted
 //////////////////////////////////
+
+/*Derek- 
+Why do you have the three stings under your list3? Either way looks good and does what it needs to good job
+20/20
+*/
 #include <iostream>
 using namespace std;
 template< typename T>
