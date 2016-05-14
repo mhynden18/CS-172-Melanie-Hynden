@@ -5,6 +5,8 @@
 
 //Using same code as first problem, but add function that doubles the capacity 
 
+//Derek- we need to push this repository as a whole file, I cant run them till then, they look good tho, so we can do that then you should have all the points you need
+
 #include <iostream>
 using namespace std;
 
